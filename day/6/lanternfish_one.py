@@ -1,0 +1,1 @@
+(lambda fish, days: ([(fish.insert(7, fish.pop(7)+fish[0]), fish.append(fish.pop(0))) for _ in range(days)], print(sum(fish))))([f.count(str(n)) for n in range(9) for f in [open("input.txt").readline().strip().split(',')]], days=256)
