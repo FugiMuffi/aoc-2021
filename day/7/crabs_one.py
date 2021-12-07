@@ -1,0 +1,1 @@
+(lambda c: print(sum([abs(x-int(c[len(c)//2] if len(c)%2 else (c[len(c)//2-1]+c[len(c)//2])/2)) for x in c]),sum([sum(range(abs(x-int(sum(c)/len(c)))+1)) for x in c])))(sorted([int(x) for x in open("input.txt").readline().split(',')]))
